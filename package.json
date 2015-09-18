@@ -1,0 +1,27 @@
+{
+  "name": "sitcon-slack-fw",
+  "version": "1.0.0",
+  "description": "Slack message forwarding tool between teams",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "foreman run nodemon app.js -e local.env",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shouko/sitcon-slack-fw.git"
+  },
+  "author": "Shouko <h999342@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shouko/sitcon-slack-fw/issues"
+  },
+  "homepage": "https://github.com/shouko/sitcon-slack-fw#readme",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "request": "^2.62.0"
+  }
+}

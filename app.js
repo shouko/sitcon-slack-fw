@@ -32,6 +32,9 @@ app.post('/', function(req, res) {
 			message: "forbidden"
 		});
 	}
+	if(req.body.user_name == 'slackbot') {
+		return res.json({});
+	}
 	var to_id = from_id == 0 ? 1 : 0;
 	var payload = {
 		username: req.body.user_name,

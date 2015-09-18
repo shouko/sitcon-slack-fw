@@ -1,6 +1,7 @@
 var express = require('express');
 var config = require('./config');
 var bodyParser = require('body-parser');
+var request = require('request');
 var _ = require('lodash');
 
 var app = express();

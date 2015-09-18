@@ -35,7 +35,7 @@ app.post('/', function(req, res) {
 	var payload = {
 		username: req.body.user_name,
 //		icon_url: "",
-		channel: config.teams[to_id].channel,
+		channel: "#" + config.teams[to_id].channel,
 		text: req.body.text
 	}
 	var options = {
